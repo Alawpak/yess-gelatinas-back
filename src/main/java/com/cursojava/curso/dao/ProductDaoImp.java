@@ -31,5 +31,10 @@ public class ProductDaoImp implements ProductDao {
 		return entityManager.createQuery(query).setParameter("name", name).getResultList();
 	}
 	
+	@Override
+	public void deleteProductById(int id) {
+		Product product = entityManager.find(Product.class, id);
+		entityManager.remove(product);
+	}
 	
 }

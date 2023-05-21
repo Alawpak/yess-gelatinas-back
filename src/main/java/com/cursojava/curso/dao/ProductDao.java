@@ -10,4 +10,7 @@ public interface ProductDao {
 
 
 	List<Product> getProductByName(String name);
+
+
+	void deleteProductById(int id);
 }
