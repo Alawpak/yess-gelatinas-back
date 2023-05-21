@@ -7,4 +7,7 @@ import com.cursojava.curso.models.Product;
 public interface ProductDao {
 
 	List<Product> getProducts();
+
+
+	List<Product> getProductByName(String name);
 }
