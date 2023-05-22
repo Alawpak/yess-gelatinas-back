@@ -13,4 +13,7 @@ public interface ProductDao {
 
 
 	void deleteProductById(int id);
+
+
+	void registrar(Product product);
 }

@@ -37,4 +37,9 @@ public class ProductDaoImp implements ProductDao {
 		entityManager.remove(product);
 	}
 	
+	@Override
+	public void registrar(Product product) {
+		entityManager.merge(product);
+	}
+	
 }
